@@ -1,4 +1,6 @@
-#Laravel Console
+# Laravel Console
+-- WORK IN PROGRESS --
+
 This package simplifies access to Symfony's console package by offering some styled commonly used
 output functions.
 
