@@ -1,0 +1,34 @@
+{
+    "name": "harrk/laravel-console",
+    "license": "MIT",
+    "require": {
+        "illuminate/console": "5.4.*|5.5.*|5.6.*"
+    },
+    "require-dev": {
+        "orchestra/testbench": "~3.0"
+    },
+    "autoload": {
+        "files": [
+            "src/helpers.php"
+        ],
+
+        "psr-4": {
+            "Harrk\\LaravelConsole\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Harrk\\LaravelConsole\\Test\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Harrk\\LaravelConsole\\ConsoleServiceProvider"
+            ]
+        }
+    }
+}
